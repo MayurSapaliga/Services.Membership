@@ -1,15 +1,6 @@
-apiVersion: backstage.io/v1alpha1
 kind: Component
-metadata:
-  name: Galaxy.Services.Membership
-  description: |
-    Service to perform CRUD operations on Membership
-  links:
-    - title: Website
-      url: https://collabware.com/membership
-spec:
-  type: service
-  owner: Collabware
-  lifecycle: production
-  dependsOn:
-    - Galaxy.Services
+type: service
+name: galaxy.services.membership
+system: v3
+consumesApis:
+  - shared-api
