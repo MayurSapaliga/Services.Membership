@@ -1,7 +1,8 @@
 apiVersion: collabwarev3/v1alpha1
 kind: Component
-type: service
-name: galaxy.services.membership
-system: v3
-consumesApis:
-  - shared-api
+metadata:
+  name: galaxy.services.membership
+spec:
+  type: service
+  consumesApis:
+    - shared-api
